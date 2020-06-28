@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TodoList />
+    <FetchApi />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList.vue'
+import FetchApi from './components/FetchApi.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TodoList,
+    FetchApi
   }
 }
 </script>
